@@ -1,0 +1,156 @@
+.article {
+  max-width: 100%;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.breadcrumbLink {
+  color: var(--text-muted);
+  transition: color 0.15s ease;
+}
+
+.breadcrumbLink:hover {
+  color: var(--primary);
+}
+
+.breadcrumbSeparator {
+  color: var(--text-subtle);
+}
+
+.breadcrumbSection {
+  color: var(--text-muted);
+}
+
+.breadcrumbCurrent {
+  color: var(--heading-color);
+  font-weight: 500;
+}
+
+.header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--stroke);
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--heading-color);
+  line-height: 1.2;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--primary);
+  background: var(--primary-light);
+  border: 1px solid var(--primary-border);
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--text-subtle);
+}
+
+.content {
+  margin-bottom: 3rem;
+}
+
+.pagination {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 3.5rem 0 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--stroke);
+}
+
+.paginationLink {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  background: var(--bg-surface);
+  border: 1px solid var(--stroke);
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.paginationLink:hover {
+  border-color: var(--primary);
+  background: var(--primary-light);
+}
+
+.prevLink {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.nextLink {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.paginationLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-subtle);
+  margin-bottom: 0.25rem;
+}
+
+.paginationLink:hover .paginationLabel {
+  color: var(--primary);
+}
+
+.paginationTitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .pagination {
+    grid-template-columns: 1fr;
+  }
+}

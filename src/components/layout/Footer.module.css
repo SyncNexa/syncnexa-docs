@@ -1,0 +1,128 @@
+.footer {
+  width: 100%;
+  border-top: 1px solid var(--stroke);
+  background: var(--bg-surface);
+  margin-top: 4rem;
+  padding: 3.5rem 0 2rem;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr 1.2fr 1.2fr;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.brandCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brandName {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--heading-color);
+}
+
+.brandTagline {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 320px;
+}
+
+.linkCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.colTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--heading-color);
+}
+
+.linkList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  transition: color 0.15s ease;
+}
+
+.link:hover {
+  color: var(--primary);
+}
+
+.bottomBar {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--stroke);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: var(--text-subtle);
+}
+
+.statusPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--primary);
+  background: var(--primary-light);
+  border: 1px solid var(--primary-border);
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+}
+
+.statusDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 6px var(--primary);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

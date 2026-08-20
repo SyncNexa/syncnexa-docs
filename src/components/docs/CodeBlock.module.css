@@ -1,0 +1,114 @@
+.container {
+  position: relative;
+  margin: 1.25rem 0;
+  border-radius: 8px;
+  background: var(--bg-code);
+  border: 1px solid var(--stroke);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background: var(--bg-code-header);
+  border-bottom: 1px solid var(--stroke);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filename {
+  font-family: var(--font-mono);
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.language {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.copyBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: transparent;
+  border: 1px solid var(--stroke);
+  border-radius: 4px;
+  padding: 0.25rem 0.55rem;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.copyBtn:hover {
+  background: var(--primary-light);
+  border-color: var(--primary-border);
+  color: var(--primary);
+}
+
+.iconCheck {
+  color: var(--primary);
+}
+
+.copiedText {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.codeWrapper {
+  overflow-x: auto;
+  padding: 0.85rem 0;
+}
+
+.pre {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.code {
+  display: block;
+  font-family: inherit;
+}
+
+.line {
+  display: flex;
+  padding: 0 1rem;
+  min-height: 1.4rem;
+}
+
+.line:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.lineNumber {
+  display: inline-block;
+  width: 2.2rem;
+  flex-shrink: 0;
+  text-align: right;
+  padding-right: 1rem;
+  color: #555555;
+  user-select: none;
+  font-size: 0.8rem;
+}
+
+.lineContent {
+  flex: 1;
+  color: #e6edf3;
+  white-space: pre;
+}

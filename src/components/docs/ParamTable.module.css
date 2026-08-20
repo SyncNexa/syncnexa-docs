@@ -1,0 +1,120 @@
+.wrapper {
+  margin: 1.5rem 0;
+}
+
+.tableTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 0.6rem;
+}
+
+.tableResponsive {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid var(--stroke);
+  background: var(--bg-surface);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.table th {
+  background: var(--bg-subtle);
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--stroke);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--stroke-subtle);
+  vertical-align: top;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.nameCell {
+  white-space: nowrap;
+}
+
+.paramName {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+  background: var(--primary-light);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+}
+
+.typeBadge {
+  font-family: var(--font-mono);
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  background: rgba(107, 114, 128, 0.1);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.requiredBadge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #dc2626;
+  background: rgba(220, 38, 38, 0.1);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.optionalBadge {
+  font-size: 0.75rem;
+  color: var(--text-subtle);
+  background: rgba(156, 163, 175, 0.1);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.descCell {
+  min-width: 250px;
+}
+
+.descText {
+  color: var(--text-main);
+  line-height: 1.5;
+  margin-bottom: 0.35rem;
+}
+
+.metaRow {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+.metaLabel {
+  font-weight: 500;
+}
+
+.metaVal {
+  font-family: var(--font-mono);
+  font-size: 0.775rem;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+}
+
+[data-theme="dark"] .metaVal {
+  background: rgba(255, 255, 255, 0.08);
+}

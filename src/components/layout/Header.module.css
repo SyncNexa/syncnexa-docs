@@ -1,0 +1,209 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  height: 60px;
+  background: var(--nav-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--nav-border);
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mobileMenuBtn {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--text-main);
+  cursor: pointer;
+  padding: 0.25rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brandName {
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+  color: var(--heading-color);
+}
+
+.docsTag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--primary);
+  background: var(--primary-light);
+  border: 1px solid var(--primary-border);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+}
+
+.versionBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: var(--bg-subtle);
+  border: 1px solid var(--stroke);
+  padding: 0.2rem 0.55rem;
+  border-radius: 9999px;
+}
+
+.versionDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+.center {
+  flex: 1;
+  max-width: 480px;
+}
+
+.searchButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.45rem 0.85rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--stroke);
+  border-radius: 8px;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.searchButton:hover {
+  border-color: var(--primary);
+  background: var(--bg-card);
+  box-shadow: 0 0 0 2px var(--primary-glow);
+}
+
+.searchIcon {
+  color: var(--text-subtle);
+  margin-right: 0.5rem;
+}
+
+.searchText {
+  flex: 1;
+  text-align: left;
+}
+
+.searchKbd {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.1rem;
+  background: var(--bg-subtle);
+  border: 1px solid var(--stroke);
+  border-radius: 4px;
+  padding: 0.15rem 0.4rem;
+  font-size: 0.7rem;
+  font-family: inherit;
+  color: var(--text-muted);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: color 0.15s ease;
+}
+
+.navLink:hover {
+  color: var(--primary);
+}
+
+.themeToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  background: var(--bg-surface);
+  border: 1px solid var(--stroke);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.themeToggle:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background: var(--primary-light);
+}
+
+@media (max-width: 900px) {
+  .mobileMenuBtn {
+    display: flex;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .center {
+    max-width: 240px;
+  }
+
+  .versionBadge {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .center {
+    display: none;
+  }
+}

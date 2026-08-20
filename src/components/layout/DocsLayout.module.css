@@ -1,0 +1,66 @@
+.root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-main);
+}
+
+.body {
+  flex: 1;
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.desktopSidebar {
+  display: block;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+  padding: 2.5rem 3rem 4rem;
+}
+
+.fullWidth {
+  max-width: 100%;
+}
+
+.contentContainer {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.mobileDrawerOverlay {
+  position: fixed;
+  inset: 0;
+  top: 60px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 45;
+  display: none;
+}
+
+.mobileDrawer {
+  width: 300px;
+  height: 100%;
+  background: var(--bg-main);
+  box-shadow: var(--shadow-lg);
+  overflow-y: auto;
+}
+
+@media (max-width: 900px) {
+  .desktopSidebar {
+    display: none;
+  }
+
+  .mobileDrawerOverlay {
+    display: block;
+  }
+
+  .main {
+    padding: 2rem 1.5rem 3rem;
+  }
+}
